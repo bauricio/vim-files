@@ -1,3 +1,4 @@
+" vim: filetype=vim
 call pathogen#infect()
 
 "load color scheme with syntax
@@ -15,37 +16,6 @@ set linebreak
 
 filetype plugin indent on
 
-inoremap <expr> <C-Space> pumvisible() ? '<C-n>' : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-imap <S-CR>    <CR><CR>end<Esc>-cc
-nmap <F8> :TagbarToggle<CR>
-nmap <F7> :NERDTreeToggle<CR>
-if has("autocmd") 
-  autocmd Filetype java setlocal omnifunc=javacomplete#Complete 
-endif 
-
-if (&tildeop)
-  nmap gcw guw~l
-  nmap gcW guW~l
-  nmap gciw guiw~l
-  nmap gciW guiW~l
-  nmap gcis guis~l
-  nmap gc$ gu$~l
-  nmap gcgc guu~l
-  nmap gcc guu~l
-  vmap gc gu~l
-else
-  nmap gcw guw~h
-  nmap gcW guW~h
-  nmap gciw guiw~h
-  nmap gciW guiW~h
-  nmap gcis guis~h
-  nmap gc$ gu$~h
-  nmap gcgc guu~h
-  nmap gcc guu~h
-  vmap gc gu~h
-endif
-
-" vim: filetype=vim
 " display a warning if file encoding isnt utf-8
 set statusline=
 set statusline+=%#warningmsg#
@@ -67,3 +37,5 @@ set statusline+=[%l,%c]         "cursor line,column
 set statusline+=\ \|%L\ lines\| "total lines
 set statusline+=\ %P            "percent through file
 set laststatus=2
+
+source $HOME/.vim/config/shortcuts
