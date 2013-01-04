@@ -34,3 +34,6 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/vimclojure"]
+	path = bundle/vimclojure
+	url = https://github.com/repos-vim/vimclojure.git
