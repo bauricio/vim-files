@@ -8,12 +8,17 @@ colorscheme solarized
 
 set number "show line numbers
 set cpoptions+=$
-set hlsearch "highlight search
 set expandtab
 set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 set linebreak
 set clipboard=unnamed
+
+"search options
+set hlsearch "highlight search
+set incsearch
+set smartcase
+set ignorecase
 
 filetype plugin indent on
 
