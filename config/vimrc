@@ -1,5 +1,5 @@
-" vim: filetype=vim
-call pathogen#infect()
+source $HOME/.vim/config/shortcuts.vim
+source $HOME/.vim/config/bundles.vim
 
 "load color scheme with syntax
 syntax enable
@@ -35,7 +35,6 @@ set statusline+=%{(&fenc!='utf-8'&&&fenc!='')?'['.&fenc.']':''}
 set statusline+=%=              "left/right separator
 set statusline+=%*              "show the errors/warning in the status line
 set statusline+=%#warningmsg#
-"set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 set statusline+=%=              "left/right separator
 set statusline+=%h\ \           "help file flag
@@ -44,4 +43,3 @@ set statusline+=\ \|%L\ lines\| "total lines
 set statusline+=\ %P            "percent through file
 set laststatus=2
 
-source $HOME/.vim/config/shortcuts
