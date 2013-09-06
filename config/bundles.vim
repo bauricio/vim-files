@@ -8,11 +8,11 @@ call vundle#rc()
 " required! 
 Bundle 'gmarik/vundle'
 
-
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'scrooloose/nerdtree'
 Bundle 'scrooloose/syntastic'
 Bundle 'wincent/Command-T'
-Bundle 'Lokaltog/powerline'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'bling/vim-airline'
 
 filetype plugin indent on 

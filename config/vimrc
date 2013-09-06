@@ -13,6 +13,7 @@ set tabstop=2 shiftwidth=2 softtabstop=2
 set autoindent
 set linebreak
 set clipboard=unnamed
+set backspace=indent,eol,start
 
 "search options
 set hlsearch "highlight search
@@ -43,3 +44,6 @@ set statusline+=\ \|%L\ lines\| "total lines
 set statusline+=\ %P            "percent through file
 set laststatus=2
 
+"set different cursor when on insert mode - works for iTerm only
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
